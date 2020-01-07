@@ -1,14 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ *Clase simple que posee los atributos y métodos respectivos de la clase Edificio.
+ *@author Kevin Robles, Oscar Trejos
+ * @version 07/01/2020
  */
 package logicadenegocios;
+import java.util.ArrayList;
 
-/**
- *
- * @author Oscar Andres
- */
+
 public class Edificio {
+    
+  private double altura;
+  private int cantidadNiveles;
+  private boolean piscina;
+  private boolean rancho;
+  private int cantidadParqueoVisitante;
+  private ArrayList<Nivel> niveles;
     
 }
