@@ -53,7 +53,7 @@ public class Propietario {
   }
   
   /**
-   * @return La información de la clase.
+   * @return La información del propietario.
    */
   @Override
   public String toString(){
