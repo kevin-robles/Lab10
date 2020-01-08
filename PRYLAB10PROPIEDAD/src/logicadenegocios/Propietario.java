@@ -12,7 +12,13 @@ public class Propietario {
   private String telefono;
   private String correo; 
   
-  
+  /**
+   * Metodo constructor para el propietario de uno o varios Bienes inmuebles
+   * @param pNombreCompleto
+   * @param pCedula
+   * @param pTelefono
+   * @param pCorreo 
+   */
   public Propietario(String pNombreCompleto, String pCedula, String pTelefono, String pCorreo) {
   this.nombreCompleto = pNombreCompleto;
   this.cedula = pCedula;
@@ -49,19 +55,19 @@ public class Propietario {
   }
 
   public void setCorreo(String pCorreo) {
-    this.correo = correo;
+    this.correo = pCorreo;
   }
   
   /**
+   * Metodo para retornar objeto en cadena de caracteres
    * @return La información del propietario.
    */
-  @Override
   public String toString(){
     String mensaje;
-    mensaje = "El nombre completo es: " + getNombreCompleto()+"/n";
-    mensaje += "La cédula es: " + getCedula() + "/n";
-    mensaje += "El teléfono es: " + getTelefono()+ "n/";
-    mensaje += "El correo es: " + getCorreo()+ "/n";
+    mensaje = "El nombre completo es: " + getNombreCompleto()+"\n";
+    mensaje += "La cédula es: " + getCedula() + "\n";
+    mensaje += "El teléfono es: " + getTelefono()+ "\n";
+    mensaje += "El correo es: " + getCorreo()+ "\n";
     return mensaje;  
   }
   

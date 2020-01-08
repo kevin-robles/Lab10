@@ -9,70 +9,77 @@ public class Nivel {
     
   private int cantidadResidencias;
   private String tipo;
-  private double cantidadMetrosCuadrados;
+  private double cantidadMetrosComerciales;
   private double costoMetroComercial;
   private double cantidadMetrosComunes;
 
-  public Nivel(int pCantidadResidencias, String pTipo, double pCantidadMetrosCuadrados,
-  double pCostoMetroComercial, double pCantidadMetrosComunes) {
+  /**
+   * Metodo constructor para un Nivel que pertenece a un Edificio
+   * @param pCantidadResidencias
+   * @param pTipo
+   * @param pCantidadMetrosCuadrados
+   * @param pCostoMetroComercial
+   * @param pCantidadMetrosComunes 
+   */
+  public Nivel(int pCantidadResidencias, String pTipo, double pCantidadMetrosComerciales,
+      double pCostoMetroComercial, double pCantidadMetrosComunes) {
     this.cantidadResidencias = pCantidadResidencias;
     this.tipo = pTipo;
-    this.cantidadMetrosCuadrados = pCantidadMetrosCuadrados;
+    this.cantidadMetrosComerciales = pCantidadMetrosComerciales;
     this.costoMetroComercial = pCostoMetroComercial;
     this.cantidadMetrosComunes = pCantidadMetrosComunes;
-    }
+   }
 
   public int getCantidadResidencias() {
-     return cantidadResidencias;
+    return cantidadResidencias;
   }
 
   public void setCantidadResidencias(int pCantidadResidencias) {
-     this.cantidadResidencias = pCantidadResidencias;
+    this.cantidadResidencias = pCantidadResidencias;
   }
 
   public String getTipo() {
-     return tipo;
+    return tipo;
   }
 
   public void setTipo(String pTipo) {
-     this.tipo = pTipo;
+    this.tipo = pTipo;
   }
 
-  public double getCantidadMetrosCuadrados() {
-     return cantidadMetrosCuadrados;
+  public double getCantidadMetrosComerciales() {
+    return cantidadMetrosComerciales;
   }
 
-  public void setCantidadMetrosCuadrados(double pCantidadMetrosCuadrados) {
-     this.cantidadMetrosCuadrados = pCantidadMetrosCuadrados;
+  public void setCantidadMetrosComerciales(double pCantidadMetrosComerciales) {
+    this.cantidadMetrosComerciales = pCantidadMetrosComerciales;
   }
 
   public double getCostoMetroComercial() {
-     return costoMetroComercial;
+    return costoMetroComercial;
   }
 
   public void setCostoMetroComercial(double pCostoMetroComercial) {
-     this.costoMetroComercial = pCostoMetroComercial;
+    this.costoMetroComercial = pCostoMetroComercial;
   }
 
   public double getCantidadMetrosComunes() {
-     return cantidadMetrosComunes;
+    return cantidadMetrosComunes;
   }
 
   public void setCantidadMetrosComunes(double pCantidadMetrosComunes) {
-     this.cantidadMetrosComunes = pCantidadMetrosComunes;
+    this.cantidadMetrosComunes = pCantidadMetrosComunes;
   }
   
-  
   /**
+   * Metodo para retornar objeto en cadena de caracteres
    * @return La información del nivel.
    */
-  @Override
   public String toString(){
     String mensaje;
-    mensaje = "La cantidad de residencias es: " + getCantidadResidencias()+"/n";
-    mensaje += "La cantidad de metros comerciales es: " + getCostoMetroComercial()+ "/n";
-    mensaje += "El tipo es: " + getTipo()+ "n/";
-    mensaje += "La cantidad de metros comunes es: " + getCantidadMetrosComunes()+ "/n";
+    mensaje = "La cantidad de residencias es: " + getCantidadResidencias()+"\n";
+    mensaje += "La cantidad de metros comerciales es: " + getCostoMetroComercial()+ "\n";
+    mensaje += "El tipo es: " + getTipo()+ "\n";
+    mensaje += "La cantidad de metros comunes es: " + getCantidadMetrosComunes()+ "\n";
     return mensaje;  
   }
   

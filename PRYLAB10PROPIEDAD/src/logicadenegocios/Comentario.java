@@ -6,17 +6,19 @@
 package logicadenegocios;
 import java.util.Date;
 
-/**
- *
- * @author Oscar Andres
- */
 public class Comentario {
-    
   private String detalle;
   private int nota;
   private String nombreVisitante;
   private Date fechaVisita; 
 
+  /**
+   * Metodo constructor para comentario sobre visitas a un bien inmueble
+   * @param pDetalle
+   * @param pNota
+   * @param pNombreVisitante
+   * @param pFechaVisita 
+   */
   public Comentario(String pDetalle, int pNota, String pNombreVisitante, Date pFechaVisita) {
     this.detalle = pDetalle;
     this.nota = pNota;
@@ -58,15 +60,15 @@ public class Comentario {
   
   
   /**
+   * Metodo para representar objeto en cadena de caracteres
    * @return La información de la clase.
    */
-  @Override
   public String toString(){
     String mensaje;
-    mensaje = "El detalle es: " + getDetalle()+"/n";
-    mensaje += "La nota es: " + getNota()+ "/n";
-    mensaje += "El nombre del visitante es: " + getNombreVisitante()+ "n/";
-    mensaje += "La fecha de visita es: " + getFechaVisita()+ "/n";
+    mensaje = "El detalle es: " + getDetalle()+"\n";
+    mensaje += "La nota es: " + getNota()+ "\n";
+    mensaje += "El nombre del visitante es: " + getNombreVisitante()+ "\n";
+    mensaje += "La fecha de visita es: " + getFechaVisita()+ "\n";
     return mensaje;  
   }
   

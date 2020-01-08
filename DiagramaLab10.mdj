@@ -135,7 +135,6 @@
 											"top": 70,
 											"width": 203.42333984375,
 											"height": 13,
-											"underline": true,
 											"text": "#numFinca: int = 0",
 											"horizontalAlignment": 0
 										},
@@ -278,13 +277,31 @@
 											"height": 13,
 											"text": "#nota: double",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFvgnWfcW60ULQ=",
+											"_parent": {
+												"$ref": "AAAAAAFvgEfx5Ok8xe8="
+											},
+											"model": {
+												"$ref": "AAAAAAFvgnWfXG6x0uk="
+											},
+											"font": "Arial;13;0",
+											"left": 757,
+											"top": 145,
+											"width": 203.42333984375,
+											"height": 13,
+											"underline": true,
+											"text": "#cantidadBienInmueble: int = 0",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 752,
 									"top": 65,
 									"width": 213.42333984375,
-									"height": 83
+									"height": 98
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -307,7 +324,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 757,
-											"top": 153,
+											"top": 168,
 											"width": 203.42333984375,
 											"height": 13,
 											"text": "+BienInmueble()",
@@ -324,7 +341,7 @@
 											},
 											"font": "Arial;13;2",
 											"left": 757,
-											"top": 168,
+											"top": 183,
 											"width": 203.42333984375,
 											"height": 13,
 											"text": "+calcularPrecioPropiedad(): double",
@@ -341,7 +358,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 757,
-											"top": 183,
+											"top": 198,
 											"width": 203.42333984375,
 											"height": 13,
 											"text": "+calcularImpuesto(): double",
@@ -358,7 +375,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 757,
-											"top": 198,
+											"top": 213,
 											"width": 203.42333984375,
 											"height": 13,
 											"text": "+toString()",
@@ -367,7 +384,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 752,
-									"top": 148,
+									"top": 163,
 									"width": 213.42333984375,
 									"height": 68
 								},
@@ -4668,7 +4685,6 @@
 							},
 							"name": "numFinca",
 							"visibility": "protected",
-							"isStatic": true,
 							"type": "int",
 							"defaultValue": "0"
 						},
@@ -4751,6 +4767,18 @@
 							"name": "nota",
 							"visibility": "protected",
 							"type": "double"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFvgnWfXG6x0uk=",
+							"_parent": {
+								"$ref": "AAAAAAFvgEfx4uk0XBI="
+							},
+							"name": "cantidadBienInmueble",
+							"visibility": "protected",
+							"isStatic": true,
+							"type": "int",
+							"defaultValue": "0"
 						}
 					],
 					"operations": [
