@@ -5,6 +5,7 @@
  */
 package logicadenegocios;
 import java.util.ArrayList;
+import java.util.Date;
 
 public abstract class BienInmueble {
   protected int numFinca;
@@ -25,7 +26,7 @@ public abstract class BienInmueble {
    * @param pPropietario 
    */
   public BienInmueble(double pAreaTerreno, double pValorMetroCuadrado, double pValorFiscal, 
-      Ubicacion pUbicacion, Propietario pPropietario) {
+    Ubicacion pUbicacion, Propietario pPropietario) {
     this.numFinca = BienInmueble.cantidadBienInmueble;
     this.areaTerreno = pAreaTerreno;
     this.valorMetroCuadrado = pValorMetroCuadrado;
@@ -104,15 +105,24 @@ public abstract class BienInmueble {
    */
   public abstract double calcularPrecioPropiedad(); 
   
-  
+  /**
+   * Método para calcular el impuesto de la propiedad
+   * @return Monto del impuesto a pagar
+   */
   public double calcularImpuesto(){ 
     return  valorFiscal*1.2;  
+  }
+  
+  
+  public void agregarComentario(String pDetalle, int pNota, String pNombreVisitante, Date pFechaVisita){
+    this.comentarios.add(new Comentario(pDetalle, pNota, pNombreVisitante, pFechaVisita));
   }
   
   /**
    * Metodo para retornar objeto en cadena de caracteres
    * @return La información del bien inmueble.
    */
+  @Override
   public String toString(){
       
     String mensaje;
