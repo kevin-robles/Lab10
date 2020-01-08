@@ -17,7 +17,7 @@ public class Casa extends Construccion{
    * @param pUbicacion
    * @param pPropietario
    */
-  public Casa(double pAreaTerreno, double pValorMetroCuadrado, double pValorFiscal, 
+  public Casa(double pAreaTerreno, double pValorMetroCuadrado, int pValorFiscal, 
       Ubicacion pUbicacion, Propietario pPropietario) {
     super(pAreaTerreno, pValorMetroCuadrado, pValorFiscal, pUbicacion, pPropietario);
   }

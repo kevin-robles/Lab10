@@ -34,15 +34,21 @@ public class AplBienInmueble {
   
   
   BienInmueble bienInmueble1 = new Lote(700,150000,45000000,ubicacion1,propietario1,"plano");
-//  BienInmueble bienInmueble2 = new Lote(1400,,45000000,ubicacion1,propietario1,"plano");
-//  BienInmueble bienInmueble3 = new Lote(700,150000,45000000,ubicacion1,propietario1,"plano");
-//  BienInmueble bienInmueble4 = new Casa();
-//  BienInmueble bienInmueble5 = new Casa();
-//  BienInmueble bienInmueble6 = new Casa();
-//  BienInmueble bienInmueble7 = new Edificio();
-//  BienInmueble bienInmueble8 = new Edificio();
-//  BienInmueble bienInmueble9 = new CentroComercial();
-//  BienInmueble bienInmueble10 = new CentroComercial();  
+  BienInmueble bienInmueble2 = new Lote(1400,20000,33000000,ubicacion4,propietario3,"montañoso");
+  BienInmueble bienInmueble3 = new Lote(2300,12000,51000000,ubicacion5,propietario2,"quebrado");
+  
+  BienInmueble bienInmueble4 = new Casa(450,35000,15750000,ubicacion2,propietario4);//Faltan los sets nada mas
+  BienInmueble bienInmueble5 = new Casa(750,60000,35600000,ubicacion1,propietario5);
+  BienInmueble bienInmueble6 = new Casa(600,72000,45120000,ubicacion3,propietario1);
+  
+  
+  BienInmueble bienInmueble7 = new Edificio(4500,50000,80000000,ubicacion4,propietario2);
+  BienInmueble bienInmueble8 = new Edificio(8000,78000,95000000,ubicacion2,propietario3);
+  BienInmueble bienInmueble9 = new Edificio(3200,78000,31000000,ubicacion3,propietario4);
+
+  
+  BienInmueble bienInmueble10 = new CentroComercial(2000,45000,16000000,ubicacion1,propietario2);
+  BienInmueble bienInmueble11 = new CentroComercial(1800,78000,14000000,ubicacion3,propietario5);  
 //  
 //  bienesInmuebles.add(bienInmueble1);
 //  bienesInmuebles.add(bienInmueble2);

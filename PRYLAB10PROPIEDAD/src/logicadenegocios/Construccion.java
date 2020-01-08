@@ -21,7 +21,7 @@ public abstract class Construccion extends BienInmueble{
    * @param pUbicacion
    * @param pPropietario 
    */
-  public Construccion(double pAreaTerreno, double pValorMetroCuadrado, double pValorFiscal, Ubicacion pUbicacion, Propietario pPropietario) {
+  public Construccion(double pAreaTerreno, double pValorMetroCuadrado, int pValorFiscal, Ubicacion pUbicacion, Propietario pPropietario) {
     super(pAreaTerreno, pValorMetroCuadrado, pValorFiscal, pUbicacion, pPropietario);
   }
 

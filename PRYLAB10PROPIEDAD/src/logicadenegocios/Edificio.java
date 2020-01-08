@@ -21,7 +21,7 @@ public class Edificio extends Construccion{
    * @param pUbicacion
    * @param pPropietario 
    */
-  public Edificio(double pAreaTerreno, double pValorMetroCuadrado, double pValorFiscal, 
+  public Edificio(double pAreaTerreno, double pValorMetroCuadrado, int pValorFiscal, 
       Ubicacion pUbicacion, Propietario pPropietario) {
     super(pAreaTerreno, pValorMetroCuadrado, pValorFiscal, pUbicacion, pPropietario);
     this.niveles = new ArrayList<Nivel>();

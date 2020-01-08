@@ -11,7 +11,7 @@ public abstract class BienInmueble {
   protected int numFinca;
   protected double areaTerreno;
   protected double valorMetroCuadrado;
-  protected double valorFiscal;
+  protected int valorFiscal;
   protected ArrayList<Comentario> comentarios;
   protected Ubicacion ubicacion;
   protected Propietario propietario;
@@ -25,7 +25,7 @@ public abstract class BienInmueble {
    * @param pUbicacion
    * @param pPropietario 
    */
-  public BienInmueble(double pAreaTerreno, double pValorMetroCuadrado, double pValorFiscal, 
+  public BienInmueble(double pAreaTerreno, double pValorMetroCuadrado, int pValorFiscal, 
     Ubicacion pUbicacion, Propietario pPropietario) {
     this.numFinca = BienInmueble.cantidadBienInmueble;
     this.areaTerreno = pAreaTerreno;
@@ -56,11 +56,11 @@ public abstract class BienInmueble {
      this.valorMetroCuadrado = pValorMetroCuadrado;
   }
 
-  public double getValorFiscal() {
+  public int getValorFiscal() {
      return valorFiscal;
   }
 
-  public void setValorFiscal(double pValorFiscal) {
+  public void setValorFiscal(int pValorFiscal) {
      this.valorFiscal = pValorFiscal;
   }
 

@@ -18,7 +18,7 @@ public class CentroComercial extends Construccion{
    * @param pUbicacion
    * @param pPropietario 
    */
-  public CentroComercial(double pAreaTerreno, double pValorMetroCuadrado, double pValorFiscal, 
+  public CentroComercial(double pAreaTerreno, double pValorMetroCuadrado, int pValorFiscal, 
       Ubicacion pUbicacion, Propietario pPropietario) {
     super(pAreaTerreno, pValorMetroCuadrado, pValorFiscal, pUbicacion, pPropietario);
   }

@@ -327,7 +327,7 @@
 											"top": 152,
 											"width": 790.4482421875,
 											"height": 13,
-											"text": "+BienInmueble(double pAreaTerreno, double pValorMetroCuadrado, double pValorFiscal, Ubicacion pUbicacion, Propietario pPropietario)",
+											"text": "+BienInmueble(double pAreaTerreno, double pValorMetroCuadrado, int pValorFiscal, Ubicacion pUbicacion, Propietario pPropietario)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -677,7 +677,7 @@
 											"top": 889,
 											"width": 971.76904296875,
 											"height": 13,
-											"text": "+Edificio(pAreaTerreno: double, pValorMetroCuadrado: double, pValorFiscal: double, pUbicacion: Ubicacion, pPropietario: Propietario)",
+											"text": "+Edificio(pAreaTerreno: double, pValorMetroCuadrado: double, pValorFiscal: int, pUbicacion: Ubicacion, pPropietario: Propietario)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -959,7 +959,7 @@
 											"top": 684,
 											"width": 759.357421875,
 											"height": 13,
-											"text": "+Casa(pAreaTerreno: double, pValorMetroCuadrado: double, pValorFiscal: double, pUbicacion: Ubicacion, pPropietario: Propietario)",
+											"text": "+Casa(pAreaTerreno: double, pValorMetroCuadrado: double, pValorFiscal: int, pUbicacion: Ubicacion, pPropietario: Propietario)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1239,7 +1239,7 @@
 											"top": 699,
 											"width": 826.541015625,
 											"height": 13,
-											"text": "+CentroComercial(pAreaTerreno: double, pValorMetroCuadrado: double, pValorFiscal: double, pUbicacion: Ubicacion, pPropietario: Propietario)",
+											"text": "+CentroComercial(pAreaTerreno: double, pValorMetroCuadrado: double, pValorFiscal: int, pUbicacion: Ubicacion, pPropietario: Propietario)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1541,7 +1541,7 @@
 											"top": 613,
 											"width": 895.4638671875,
 											"height": 13,
-											"text": "+Lote(pAreaTerreno: double, pValorMetroCuadrado: double, pValorFiscal: double, pUbicacion: Ubicacion, pPropietario: Propietario, pTipoTopografia: String)",
+											"text": "+Lote(pAreaTerreno: double, pValorMetroCuadrado: double, pValorFiscal: int, pUbicacion: Ubicacion, pPropietario: Propietario, pTipoTopografia: String)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1950,8 +1950,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1520,
-											"top": 112,
+											"left": 1072,
+											"top": 64,
 											"height": 13
 										},
 										{
@@ -1961,9 +1961,9 @@
 												"$ref": "AAAAAAFvgFXGU+sFT3M="
 											},
 											"font": "Arial;13;3",
-											"left": 1285,
-											"top": 327,
-											"width": 172.732421875,
+											"left": 1061,
+											"top": 303,
+											"width": 761.50927734375,
 											"height": 13,
 											"text": "Construccion"
 										},
@@ -1975,8 +1975,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1520,
-											"top": 112,
+											"left": 1072,
+											"top": 64,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -1989,16 +1989,16 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1520,
-											"top": 112,
+											"left": 1072,
+											"top": 64,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1280,
-									"top": 320,
-									"width": 182.732421875,
+									"left": 1056,
+									"top": 296,
+									"width": 771.50927734375,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFvgFXGU+sG8+s="
@@ -2033,9 +2033,9 @@
 												"$ref": "AAAAAAFvgFe66es0JYs="
 											},
 											"font": "Arial;13;0",
-											"left": 1285,
-											"top": 350,
-											"width": 172.732421875,
+											"left": 1061,
+											"top": 326,
+											"width": 761.50927734375,
 											"height": 13,
 											"text": "#areaConstruccion: double",
 											"horizontalAlignment": 0
@@ -2050,9 +2050,9 @@
 												"$ref": "AAAAAAFvgFfF/us6kKQ="
 											},
 											"font": "Arial;13;0",
-											"left": 1285,
-											"top": 365,
-											"width": 172.732421875,
+											"left": 1061,
+											"top": 341,
+											"width": 761.50927734375,
 											"height": 13,
 											"text": "#cantidadEspacioParqueo: int",
 											"horizontalAlignment": 0
@@ -2067,9 +2067,9 @@
 												"$ref": "AAAAAAFvgFjgI+tGFig="
 											},
 											"font": "Arial;13;0",
-											"left": 1285,
-											"top": 380,
-											"width": 172.732421875,
+											"left": 1061,
+											"top": 356,
+											"width": 761.50927734375,
 											"height": 13,
 											"text": "#estiloConstruccion: String",
 											"horizontalAlignment": 0
@@ -2084,9 +2084,9 @@
 												"$ref": "AAAAAAFvgFkKs+tMIss="
 											},
 											"font": "Arial;13;0",
-											"left": 1285,
-											"top": 395,
-											"width": 172.732421875,
+											"left": 1061,
+											"top": 371,
+											"width": 761.50927734375,
 											"height": 13,
 											"text": "#valorMetroCuadrado: double",
 											"horizontalAlignment": 0
@@ -2101,18 +2101,18 @@
 												"$ref": "AAAAAAFvgFosW+tY/FA="
 											},
 											"font": "Arial;13;0",
-											"left": 1285,
-											"top": 410,
-											"width": 172.732421875,
+											"left": 1061,
+											"top": 386,
+											"width": 761.50927734375,
 											"height": 13,
 											"text": "#fechaConstruccion: Date",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1280,
-									"top": 345,
-									"width": 182.732421875,
+									"left": 1056,
+									"top": 321,
+									"width": 771.50927734375,
 									"height": 83
 								},
 								{
@@ -2135,11 +2135,11 @@
 												"$ref": "AAAAAAFvgKS3fSQPQ68="
 											},
 											"font": "Arial;13;0",
-											"left": 1285,
-											"top": 433,
-											"width": 172.732421875,
+											"left": 1061,
+											"top": 409,
+											"width": 761.50927734375,
 											"height": 13,
-											"text": "+Construccion()",
+											"text": "+Construccion(double pAreaTerreno, double pValorMetroCuadrado, int pValorFiscal, Ubicacion pUbicacion, Propietario pPropietario)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2152,18 +2152,18 @@
 												"$ref": "AAAAAAFvgKJTFhgAWiY="
 											},
 											"font": "Arial;13;0",
-											"left": 1285,
-											"top": 448,
-											"width": 172.732421875,
+											"left": 1061,
+											"top": 424,
+											"width": 761.50927734375,
 											"height": 13,
 											"text": "+toString(): String",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1280,
-									"top": 428,
-									"width": 182.732421875,
+									"left": 1056,
+									"top": 404,
+									"width": 771.50927734375,
 									"height": 38
 								},
 								{
@@ -2177,8 +2177,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 760,
-									"top": 56,
+									"left": 536,
+									"top": 32,
 									"width": 10,
 									"height": 10
 								},
@@ -2193,17 +2193,17 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 760,
-									"top": 56,
+									"left": 536,
+									"top": 32,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 1280,
-							"top": 320,
-							"width": 182.732421875,
+							"left": 1056,
+							"top": 296,
+							"width": 771.50927734375,
 							"height": 146,
 							"nameCompartment": {
 								"$ref": "AAAAAAFvgFXGU+sFT3M="
@@ -3637,7 +3637,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 1424,
-									"top": 270,
+									"top": 259,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -3658,7 +3658,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 1424,
-									"top": 255,
+									"top": 244,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -3679,7 +3679,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 1424,
-									"top": 300,
+									"top": 289,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -3696,7 +3696,7 @@
 							"tail": {
 								"$ref": "AAAAAAFvgFXGU+sE9tg="
 							},
-							"points": "1370:320;1370:291;1479:291;1479:244",
+							"points": "1370:296;1370:280;1479:280;1479:244",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFvgJyIC/+rP+c="
@@ -3789,7 +3789,7 @@
 							"tail": {
 								"$ref": "AAAAAAFvgEf+xelfT8A="
 							},
-							"points": "178:776;178:496;1312:496;1312:465",
+							"points": "178:776;178:496;1312:496;1312:441",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFvgJ0uCwETq/Y="
@@ -3882,7 +3882,7 @@
 							"tail": {
 								"$ref": "AAAAAAFvgEpU6OmN5is="
 							},
-							"points": "474:616;474:520;1360:520;1360:465",
+							"points": "474:616;474:520;1360:520;1360:441",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFvgJ20ywLA4n8="
@@ -3975,7 +3975,7 @@
 							"tail": {
 								"$ref": "AAAAAAFvgEpZqem2Hfc="
 							},
-							"points": "1522:616;1522:560;1408:560;1408:465",
+							"points": "1522:616;1522:560;1408:560;1408:441",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFvgJ61lgYEec8="
@@ -4008,8 +4008,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1880,
-									"top": 409,
+									"left": 1924,
+									"top": 401,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -4029,8 +4029,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1880,
-									"top": 424,
+									"left": 1924,
+									"top": 416,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -4050,8 +4050,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1881,
-									"top": 379,
+									"left": 1925,
+									"top": 371,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -4068,7 +4068,7 @@
 							"tail": {
 								"$ref": "AAAAAAFvgEtXoOnkDRs="
 							},
-							"points": "1986:560;1986:400;1776:400;1776:244",
+							"points": "1986:560;1986:392;1864:392;1864:244",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFvgJ8s/QizlxY="
@@ -4836,8 +4836,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFvgKU+jCZxzU0="
 									},
-									"name": "double pValorMetroCuadrado",
-									"type": ""
+									"name": "double pValorMetroCuadrado"
 								},
 								{
 									"_type": "UMLParameter",
@@ -4845,8 +4844,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFvgKU+jCZxzU0="
 									},
-									"name": "double pValorFiscal",
-									"type": ""
+									"name": "int pValorFiscal"
 								},
 								{
 									"_type": "UMLParameter",
@@ -4854,8 +4852,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFvgKU+jCZxzU0="
 									},
-									"name": "Ubicacion pUbicacion",
-									"type": ""
+									"name": "Ubicacion pUbicacion"
 								},
 								{
 									"_type": "UMLParameter",
@@ -4863,8 +4860,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFvgKU+jCZxzU0="
 									},
-									"name": "Propietario pPropietario",
-									"type": ""
+									"name": "Propietario pPropietario"
 								}
 							]
 						},
@@ -5115,7 +5111,7 @@
 										"$ref": "AAAAAAFvgKR6LCLdO/g="
 									},
 									"name": "pValorFiscal",
-									"type": "double"
+									"type": "int"
 								},
 								{
 									"_type": "UMLParameter",
@@ -5323,7 +5319,7 @@
 										"$ref": "AAAAAAFvgKSTvSNYIYM="
 									},
 									"name": "pValorFiscal",
-									"type": "double"
+									"type": "int"
 								},
 								{
 									"_type": "UMLParameter",
@@ -5477,7 +5473,7 @@
 										"$ref": "AAAAAAFvgKSkHSOmyZk="
 									},
 									"name": "pValorFiscal",
-									"type": "double"
+									"type": "int"
 								},
 								{
 									"_type": "UMLParameter",
@@ -5637,7 +5633,7 @@
 										"$ref": "AAAAAAFvgKjDHSvRRj0="
 									},
 									"name": "pValorFiscal",
-									"type": "double"
+									"type": "int"
 								},
 								{
 									"_type": "UMLParameter",
@@ -5951,7 +5947,54 @@
 							"_parent": {
 								"$ref": "AAAAAAFvgFXGU+sCSgE="
 							},
-							"name": "Construccion"
+							"name": "Construccion",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFvhliWRv+Zihk=",
+									"_parent": {
+										"$ref": "AAAAAAFvgKS3fSQPQ68="
+									},
+									"name": "double pAreaTerreno",
+									"type": ""
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFvhliWR/+a7aU=",
+									"_parent": {
+										"$ref": "AAAAAAFvgKS3fSQPQ68="
+									},
+									"name": "double pValorMetroCuadrado",
+									"type": ""
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFvhliWR/+bsZI=",
+									"_parent": {
+										"$ref": "AAAAAAFvgKS3fSQPQ68="
+									},
+									"name": "int pValorFiscal",
+									"type": ""
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFvhliWR/+ci/o=",
+									"_parent": {
+										"$ref": "AAAAAAFvgKS3fSQPQ68="
+									},
+									"name": "Ubicacion pUbicacion",
+									"type": ""
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFvhliWR/+daz4=",
+									"_parent": {
+										"$ref": "AAAAAAFvgKS3fSQPQ68="
+									},
+									"name": "Propietario pPropietario",
+									"type": ""
+								}
+							]
 						},
 						{
 							"_type": "UMLOperation",

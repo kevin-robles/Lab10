@@ -17,7 +17,7 @@ public class Lote extends BienInmueble{
    * @param pPropietario
    * @param pTipoTopograficia 
    */
-  public Lote(double pAreaTerreno, double pValorMetroCuadrado, double pValorFiscal, 
+  public Lote(double pAreaTerreno, double pValorMetroCuadrado, int pValorFiscal, 
       Ubicacion pUbicacion, Propietario pPropietario,String pTipoTopograficia) {
     super(pAreaTerreno, pValorMetroCuadrado, pValorFiscal, pUbicacion, pPropietario);
     this.tipoTopografia = pTipoTopograficia;
