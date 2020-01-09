@@ -47,9 +47,12 @@ public class Lote extends BienInmueble{
    * Metodo para representar el objeto en cadena de caracteres
    * @return objeto en cadena de caracteres
    */
+  @Override
   public String toString(){
-    String mensaje = "Tipo topografia: "+getTipoTopografia()+"\n";
-    mensaje +="Precio propiedad: "+calcularPrecioPropiedad()+"\n";
+    String mensaje = "";
+    mensaje += super.toString();
+    mensaje += "Tipo topografia: "+getTipoTopografia()+"\n";
+    mensaje += "Precio propiedad: ₡"+(int)calcularPrecioPropiedad()+"\n";
     return mensaje;
   }
     

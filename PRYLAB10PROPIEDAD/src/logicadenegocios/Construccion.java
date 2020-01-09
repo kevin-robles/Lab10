@@ -69,10 +69,13 @@ public abstract class Construccion extends BienInmueble{
    * Metodo para retornar objeto en cadena de caracteres
    * @return La información del bien inmueble.
    */
+  @Override
   public String toString(){
-    String mensaje = "Área de construcción: "+getAreaConstruccion()+"\n";
-    mensaje += "Valor metro cuadrado de construcción: "+getValorMetroCuadradoConstruccion()+"\n";
-    mensaje += "cantidad de espacios para parqueo: "+getCantidadEspacioParqueo()+"\n";
+    String mensaje = "";
+    mensaje += super.toString();
+    mensaje += "Área de construcción: "+getAreaConstruccion()+"m²\n";
+    mensaje += "Valor metro cuadrado de construcción: ₡"+getValorMetroCuadradoConstruccion()+"\n";
+    mensaje += "Cantidad de espacios para parqueo: "+getCantidadEspacioParqueo()+"\n";
     mensaje += "Estilo de construcción: "+getEstiloConstruccion()+"\n";
     mensaje += "Fecha de construcción: "+getFechaConstruccion()+"\n";
     return mensaje;

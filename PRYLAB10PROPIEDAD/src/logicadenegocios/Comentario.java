@@ -65,10 +65,10 @@ public class Comentario {
    */
   public String toString(){
     String mensaje;
-    mensaje = "El detalle es: " + getDetalle()+"\n";
-    mensaje += "La nota es: " + getNota()+ "\n";
-    mensaje += "El nombre del visitante es: " + getNombreVisitante()+ "\n";
-    mensaje += "La fecha de visita es: " + getFechaVisita()+ "\n";
+    mensaje = "\tDetalle: " + getDetalle()+"\n";
+    mensaje += "\tNota: " + getNota()+ "\n";
+    mensaje += "\tENombre visitante: " + getNombreVisitante()+ "\n";
+    mensaje += "\tFecha visita: " + getFechaVisita()+ "\n\n";
     return mensaje;  
   }
   

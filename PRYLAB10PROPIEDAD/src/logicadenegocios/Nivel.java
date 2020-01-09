@@ -76,10 +76,10 @@ public class Nivel {
    */
   public String toString(){
     String mensaje;
-    mensaje = "La cantidad de residencias es: " + getCantidadResidencias()+"\n";
-    mensaje += "La cantidad de metros comerciales es: " + getCostoMetroComercial()+ "\n";
-    mensaje += "El tipo es: " + getTipo()+ "\n";
-    mensaje += "La cantidad de metros comunes es: " + getCantidadMetrosComunes()+ "\n";
+    mensaje = "\tCantidad residencias: " + getCantidadResidencias()+"\n";
+    mensaje += "\tCantidad metros comerciales: " + getCostoMetroComercial()+ "m²\n";
+    mensaje += "\tTipo: " + getTipo()+ "\n";
+    mensaje += "\tCantidad metros comunes: " + getCantidadMetrosComunes()+ "m²\n";
     return mensaje;  
   }
   

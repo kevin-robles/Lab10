@@ -64,10 +64,10 @@ public class Ubicacion {
    */
   public String toString(){
     String mensaje;
-    mensaje = "La provincia es: " + getProvincia()+"\n";
-    mensaje += "El canton es: " + getCanton() + "\n";
-    mensaje += "El distrito es: " + getDistrito() + "\n";
-    mensaje += "La dirección exacta es: " + getDireccionExacta() + "\n";
+    mensaje = "\tProvincia: " + getProvincia()+"\n";
+    mensaje += "\tCantón: " + getCanton() + "\n";
+    mensaje += "\tDistrito: " + getDistrito() + "\n";
+    mensaje += "\tDirección exacta: " + getDireccionExacta() + "\n";
     return mensaje;  
   }
    

@@ -34,6 +34,7 @@ public abstract class BienInmueble {
     this.ubicacion = pUbicacion;
     this.propietario = pPropietario;
     BienInmueble.cantidadBienInmueble ++;
+    this.comentarios = new ArrayList<Comentario>();
   }
 
   public int getNumFinca() {
@@ -124,18 +125,23 @@ public abstract class BienInmueble {
    */
   @Override
   public String toString(){
-      
-    String mensaje;
-    mensaje = "\n\nEl número de finca es: " + getNumFinca()+"\n";
-    mensaje += "El area del terreno es: " + getAreaTerreno()+ "\n";
-    mensaje += "El valor del metro cuadrado es: " + getValorMetroCuadrado()+ "\n";
-    mensaje += "El valor fiscal es: " + getValorFiscal()+ "\n";
-    mensaje += "La nota es: " + getNota()+ "\n";
-    mensaje += "La ubicación es: " + ubicacion.toString()+ "\n";
-    mensaje += "La informacion del propietario es: " + propietario.toString()+ "\n";
+    String mensaje = "\n\n\tINFORMACIÓN DE BIEN INMUEBLE";
+    mensaje += "\nNúmero de finca: " + getNumFinca()+"\n";
+    mensaje += "Tipo Bien Inmueble: "+getClass().getSimpleName()+"\n";
+    mensaje += "Área del terreno: " + getAreaTerreno()+ "m²\n";
+    mensaje += "Valor del metro cuadrado: ₡" + getValorMetroCuadrado()+ "\n";
+    mensaje += "Valor fiscal: ₡" + getValorFiscal()+ "\n";
+    mensaje += "Nota: " + getNota()+ "\n";
+    mensaje += "Ubicación: \n" + ubicacion.toString()+ "\n";
+    mensaje += "Propietario: \n" + propietario.toString()+ "\n";
+    mensaje += "Comentarios: \n";
+    int contador = 1;
     for(Comentario comentario : comentarios){
+      mensaje += "#"+contador;
+      contador++;
       mensaje += comentario.toString();
     }
+    mensaje += "\n";
     return mensaje;
   
   }

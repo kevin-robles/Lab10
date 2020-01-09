@@ -67,12 +67,14 @@ public class CentroComercial extends Construccion{
    * Metodo para retornar objeto en cadena de caracteres
    * @return La información del bien inmueble.
    */
+  @Override
   public String toString(){
     String mensaje = "";
+    mensaje += super.toString();
     mensaje += "Cantidad tiendas: "+getCantidadTiendas()+"\n";
     mensaje += "Nombre cadena de cine: "+getNombreCine()+"\n";
     mensaje += "Cantidad de salas de cine: "+getCantidadSalasCine()+"\n";
-    mensaje +="Precio propiedad: "+calcularPrecioPropiedad()+"\n";
+    mensaje +="Precio propiedad: ₡"+(int)calcularPrecioPropiedad()+"\n";
     return mensaje;
   }
   

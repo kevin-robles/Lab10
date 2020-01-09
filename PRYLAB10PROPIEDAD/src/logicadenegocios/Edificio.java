@@ -105,13 +105,16 @@ public class Edificio extends Construccion{
    * Metodo para retornar objeto en cadena de caracteres
    * @return La información del bien inmueble.
    */
+  @Override
   public String toString(){
     String mensaje = "";
-    mensaje +="Altura: "+getAltura()+"\n";
+    mensaje += super.toString();
+    mensaje +="Altura: "+getAltura()+" m\n";
     mensaje +="Cantidad niveles: "+getCantidadNiveles()+"\n";
     mensaje +="Posee piscina: "+isPiscina()+"\n";
     mensaje +="Posee rancho: "+isRancho()+"\n";
-    mensaje +="Precio propiedad: "+calcularPrecioPropiedad()+"\n";
+    mensaje +="Precio propiedad: ₡"+(int)calcularPrecioPropiedad()+"\n";
+    mensaje +="Niveles: \n";
     for(Nivel nivel:niveles){
       mensaje += nivel.toString();
     }

@@ -64,10 +64,10 @@ public class Propietario {
    */
   public String toString(){
     String mensaje;
-    mensaje = "El nombre completo es: " + getNombreCompleto()+"\n";
-    mensaje += "La cédula es: " + getCedula() + "\n";
-    mensaje += "El teléfono es: " + getTelefono()+ "\n";
-    mensaje += "El correo es: " + getCorreo()+ "\n";
+    mensaje = "\tNombre: " + getNombreCompleto()+"\n";
+    mensaje += "\tCédula: " + getCedula() + "\n";
+    mensaje += "\tTeléfono: " + getTelefono()+ "\n";
+    mensaje += "\tCorreo: " + getCorreo()+ "\n";
     return mensaje;  
   }
   

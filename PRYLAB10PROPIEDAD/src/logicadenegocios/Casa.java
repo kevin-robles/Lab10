@@ -52,11 +52,13 @@ public class Casa extends Construccion{
    * Metodo para retornar objeto en cadena de caracteres
    * @return La información del bien inmueble.
    */
+  @Override
   public String toString(){
     String mensaje = "";
-    mensaje +="Número de casa:"+getNumeroCasa()+"\n";
+    mensaje += super.toString();
+    mensaje +="Número de casa: "+getNumeroCasa()+"\n";
     mensaje +="Color: "+getColor()+"\n";
-    mensaje +="Precio propiedad: "+calcularPrecioPropiedad()+"\n";
+    mensaje +="Precio propiedad: ₡"+(int)calcularPrecioPropiedad()+"\n";
     return mensaje;
   }
 }
